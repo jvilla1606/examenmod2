@@ -83,65 +83,9 @@ footer {
     padding: 20px 0;
 }
 
-footer .wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-footer .icon {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 2rem;
-    margin: 0 10px;
-    position: relative;
-    display: inline-block;
-}
-
-footer .icon .tooltip {
-    position: absolute;
-    top: -40px;
-    background-color: #343a40;
-    color: #ffffff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    opacity: 0;
-    transition: opacity 0.3s;
-    pointer-events: none;
-}
-
-footer .icon:hover .tooltip {
-    opacity: 1;
-}
-
 footer p {
     margin-top: 20px;
     font-size: 0.9rem;
 }
 
-/* Iconos sociales */
-.icon span {
-    font-size: 1.5rem;
-    color: #ffffff;
-    margin: 0 15px;
-}
 
-.icon.facebook:hover span {
-    color: #3b5998;
-}
-
-.icon.twitter:hover span {
-    color: #00acee;
-}
-
-.icon.instagram:hover span {
-    color: #c13584;
-}
-
-.icon.github:hover span {
-    color: #333;
-}
-
-.icon.youtube:hover span {
-    color: #ff0000;
-}
