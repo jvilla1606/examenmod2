@@ -4,6 +4,7 @@ body {
 
 header {
     /*background: url('header-bg.jpg') no-repeat center center;*/
+    background-color: greenyellow;
     background-size: cover;
     color: white;
 }
