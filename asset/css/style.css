@@ -8,6 +8,9 @@ header {
     background-size: cover;
     color: white;
 }
+#projects .card {
+    position: relative; 
+}
 
 #projects .overlay {
     position: absolute;
@@ -30,6 +33,9 @@ header {
     background: rgba(0, 0, 0, 0.8);
     border-radius: 5px;
 }
+#projects .card:hover .overlay {
+    opacity: 1; 
+}
 
 h2 {
     color: #333;
@@ -45,5 +51,27 @@ h2 {
 }
 
 footer {
-    background-color: greenyellow;
+    background-color: #20966e;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer .networks-left {
+    display: flex;
+    justify-content: center; 
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+footer .social-icon img {
+    width: 60px; 
+    height: 60px;
+    object-fit: contain; 
+    background: none; 
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.875rem; 
 }
