@@ -1,0 +1,28 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    /*background: url('header-bg.jpg') no-repeat center center;*/
+    background-size: cover;
+    color: white;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+.danger-btn{
+    background: #e74c3c;
+}
+#projects .card {
+    transition: transform 0.3s ease;
+}
+
+#projects .card:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: greenyellow;
+}
