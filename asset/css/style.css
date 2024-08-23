@@ -9,13 +9,33 @@ header {
     color: white;
 }
 
+#projects .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+}
+#projects .video-link {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+}
+
 h2 {
     color: #333;
     margin-bottom: 20px;
 }
-.danger-btn{
-    background: #e74c3c;
-}
+
 #projects .card {
     transition: transform 0.3s ease;
 }
