@@ -1,137 +1,147 @@
+/* Estilos generales */
 body {
     font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
 }
 
+/* Estilos del Navbar */
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar-brand, .nav-link {
+    color: #ffffff;
+}
+
+.nav-link.active, .nav-link:hover {
+    color: #ffcc00;
+}
+
+/* Estilos del Header */
 header {
-    background-color: greenyellow;
-    background-size: cover;
-    color: white;
+    background-color: #6c757d;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 0;
 }
 
-#projects .card {
-    position: relative; 
-}
-
-#projects .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    opacity: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: opacity 0.3s ease;
-}
-
-#projects .video-link {
-    color: white;
-    font-size: 1.5rem;
-    text-decoration: none;
-    padding: 10px 20px;
-    background: rgba(0, 0, 0, 0.8);
-    border-radius: 5px;
-}
-
-#projects .card:hover .overlay {
-    opacity: 1; 
-}
-
-h2 {
-    color: #333;
+header h1 {
+    font-size: 3rem;
     margin-bottom: 20px;
 }
 
+header p.lead {
+    font-size: 1.5rem;
+}
+
+header .danger-btn {
+    margin-top: 20px;
+    padding: 10px 30px;
+    color: white;
+    background-color: #ff4444;
+    border: none;
+    border-radius: 25px;
+    text-transform: uppercase;
+}
+
+/* Estilos de la sección "Sobre mí" */
+#about {
+    padding: 60px 0;
+}
+
+#about img {
+    border-radius: 10px;
+}
+
+/* Estilos de la sección "Proyectos" */
 #projects .card {
-    transition: transform 0.3s ease;
+    border: none;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 #projects .card:hover {
-    transform: scale(1.05);
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-.wrapper .icon{wrapper .icon{
-    position: relative;: relative;
-    background-color: #ffffff;-color: #ffffff;
-    border-radius: 50%;-radius: 50%;
-    margin: 10px;: 10px;
-    width: 50px;: 50px;
-    height: 50px;: 50px;
-    line-height: 50px;-height: 50px;
-    font-size: 22px;-size: 22px;
-    display: inline-block;: inline-block;
-    align-items: center;-items: center;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    cursor: pointer;: pointer;
-    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    color: #333;: #333;
-    text-decoration: none;-decoration: none;
-  }}
+/* Estilos de la sección "Contacto" */
+#contact {
+    padding: 60px 0;
+}
 
-  .wrapper .tooltip {.wrapper .tooltip {
-    position: absolute;: absolute;
-    top: 0;: 0;
-    line-height: 1.5;-height: 1.5;
-    font-size: 14px;-size: 14px;
-    background-color: #ffffff;-color: #ffffff;
-    color: #ffffff;: #ffffff;
-    padding: 5px 8px;
-    border-radius: 5px;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  .wrapper .tooltip::before {
+#contact .form-control {
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/* Estilos del footer */
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+footer .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .icon {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 2rem;
+    margin: 0 10px;
+    position: relative;
+    display: inline-block;
+}
+
+footer .icon .tooltip {
     position: absolute;
-    content: "";
-    height: 8px;
-    width: 8px;
-    background-color: #ffffff;
-    bottom: -3px;
-    left: 50%;
-    transform: translate(-50%) rotate(45deg);
-    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  .wrapper .icon:hover .tooltip {
-    top: -45px;
+    top: -40px;
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+}
+
+footer .icon:hover .tooltip {
     opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-  }
-  .wrapper .icon:hover span,
-  .wrapper .icon:hover .tooltip {
-    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
-  }
-  .wrapper .facebook:hover,
-  .wrapper .facebook:hover .tooltip,
-  .wrapper .facebook:hover .tooltip::before {
-    background-color: #3b5999;
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+/* Iconos sociales */
+.icon span {
+    font-size: 1.5rem;
     color: #ffffff;
-  }
-  .wrapper .twitter:hover,
-  .wrapper .twitter:hover .tooltip,
-  .wrapper .twitter:hover .tooltip::before {
-    background-color: #46c1f6;
-    color: #ffffff;
-  }
-  .wrapper .instagram:hover,
-  .wrapper .instagram:hover .tooltip,
-  .wrapper .instagram:hover .tooltip::before {
-    background-color: #e1306c;
-    color: #ffffff;
-  }
-  .wrapper .github:hover,
-  .wrapper .github:hover .tooltip,
-  .wrapper .github:hover .tooltip::before {
-    background-color: #333333;
-    color: #ffffff;
-  }
-  .wrapper .youtube:hover,
-  .wrapper .youtube:hover .tooltip,
-  .wrapper .youtube:hover .tooltip::before {
-    background-color: #de463b;
-    color: #ffffff;
-  }}
+    margin: 0 15px;
+}
+
+.icon.facebook:hover span {
+    color: #3b5998;
+}
+
+.icon.twitter:hover span {
+    color: #00acee;
+}
+
+.icon.instagram:hover span {
+    color: #c13584;
+}
+
+.icon.github:hover span {
+    color: #333;
+}
+
+.icon.youtube:hover span {
+    color: #ff0000;
+}
