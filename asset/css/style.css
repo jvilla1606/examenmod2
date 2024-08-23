@@ -67,13 +67,13 @@ footer .networks-left {
 }
 
 footer .social-icon img {
-    width: 50px; /* Tamaño uniforme para todas las imágenes */
-    height: 50px;
+    width: 20px; /* Tamaño uniforme para todas las imágenes */
+    height: 20px;
     object-fit: cover; /* Recorta la imagen para que se ajuste al contenedor */
-    border-radius: 50%; /* Hace que las imágenes sean circulares */
+    border-radius: 20%; /* Hace que las imágenes sean circulares */
     background: none; /* Elimina cualquier fondo */
     padding: 5px; /* Espacio alrededor de las imágenes */
-    border: 2px solid white; /* Añade un borde blanco */
+   /* border: 2px solid white;  Añade un borde blanco */
 }
 
 footer p {
