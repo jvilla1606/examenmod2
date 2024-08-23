@@ -69,6 +69,7 @@ h2 {
     color: #333;: #333;
     text-decoration: none;-decoration: none;
   }}
+
   .wrapper .tooltip {.wrapper .tooltip {
     position: absolute;: absolute;
     top: 0;: 0;
@@ -133,4 +134,4 @@ h2 {
   .wrapper .youtube:hover .tooltip::before {
     background-color: #de463b;
     color: #ffffff;
-  }
+  }}
