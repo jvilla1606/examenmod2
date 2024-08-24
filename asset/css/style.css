@@ -88,7 +88,7 @@ footer p {
     font-size: 0.9rem;
 }
 
-.redes{
+.redes {
     margin: 0;
     position: absolute;
     top: 50%;
@@ -96,7 +96,7 @@ footer p {
     transform: translate(-50%, -50%);
 }
 
-i{
+i {
     text-align: center;
     font-size: 25%;
     color: black;
@@ -107,15 +107,12 @@ i{
     transition: .5s ease;
 } 
 
-.fa-youtube:hover{
+.fa-youtube:hover {
     background-color: red;
     color: beige;
     box-shadow: 0 0 15px red,
                 0 0 45px red,
                 0 0 75px red,
                 0 0 115px red;
-
-    
-
 }
 
