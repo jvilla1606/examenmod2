@@ -11,10 +11,9 @@
 
 </head>
 <body>
-    
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class = "navbar navbar-expand-lg navbar-dark bg-dark" >
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Juan Pérez</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,8 +26,15 @@
                     <li class="nav-item"><a class="nav-link" href="#gallery">Fotos</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
                 </ul>
+                <ul class="nav navbar-nav navbar-right redes-sociales">-- comentado previamente
+                <ul class="navbar-nav ">
+                    <li class="nav-item"><a href="https://www.instagram.com/" target="_blank" class="nav-link"><img src="asset/img/images/instagram.png" width="30px"></a></li>
+                    <li class="nav-item"><a href="https://www.twitter.com/" target="_blank" class="nav-link"><img src="asset/img/images/twitter.png" width="30px"></a></li>
+                    <li class="nav-item"><a href="https://www.facebook.com/" target="_blank" class="nav-link"><img src="asset/img/images/youtube.png" width="30px"> </a></li>
+                    <li class="nav-item"><a href="https://www.linkedin.com/" target="_blank" class="nav-link"><img src="asset/img/images/linkedin.png" width="30px"> </a></li>
+                    <li class="nav-item"><a href="https://www.youtube.com/" target="_blank" class="nav-link"><img src="asset/img/images/youtube.png" width="30px"> </a></li>
+                </ul>
             </div>
-            
         </div>
     </nav>
 
@@ -41,7 +47,7 @@
         </div>
     </header>
 
-    <!-- About Section -->
+    <!-- About Section --> 
     <section id="about" class="py-5">
         <div class="container">
             <div class="row">
@@ -59,17 +65,18 @@
         <div class="container">
             <div class="row ">
                 <div class="col-lg-6">
-                    <img src="asset/img/oscar.jpg" alt="Foto oscar" class="img-fluid rounded">
+                    <img src="asset/img/oscar.jpg" alt="Foto oscar">
                 </div>
-                <div class="col-lg-6 "> <!--responsive-top-space global-cols-->
-                    <h2>Comienzos como actor <br>(un buen actor)</h2> <!--style=" margin-top: 80px;"-->
+                <div class="col-lg-6 "> <!--responsive-top-space global-cols-- aca-->
+                    <h2>Comienzos como actor <br>(un buen actor)</h2> <!--style=" margin-top: 80px;"--aca-->
                     <p>Todo comenzó en el año 2006 cuando actuo por primera vez en la novela Amores de Mercado, haciendo un papel doble. </p><br>
                     <p>Así enamoro a Hollywood y pronto iniciaría una carrera extraordinaria en el mundo de la actuacion. </p><br>
 
                 </div> 
             </div>
         </div>
-    </section>
+    </section> 
+
     <!-- Projects Section -->
     <section id="projects" class="py-5 bg-light">
         <div class="container">
@@ -88,10 +95,10 @@
                                 Dirección: Bennett Miller
                             </p>
                         <div class="overlay">
-                            <a href="https://www.youtube.com/watch?v=ou-bhZM7eBo"  class="video-link" target="_blank">Ver tráiler</a> <!--class="btn btn-primary">Ver más</a> -->
+                            <a href="https://www.youtube.com/watch?v=ou-bhZM7eBo"  class="video-link" target="_blank">Ver tráiler</a> <!--class="btn btn-primary">Ver más</a> -- aca -->
                         </div>
-                            <!--<a href="https://www.youtube.com/watch?v=ou-bhZM7eBo" class="btn btn-primary">Ver más</a>
-                            -->
+                            <!--<a href="https://www.youtube.com/watch?v=ou-bhZM7eBo" class="btn btn-primary">Ver más</a>-->
+                    
                         </div>
                     </div>
                 </div>
@@ -117,17 +124,38 @@
                 </div>
             </div>
         </div>
-        <div class="elementor-element elementor-element-854d667 elementor-align-center elementor-tablet-align-center elementor-mobile-align-center modal_window elementor-widget elementor-widget-button animated headShake" data-id="854d667" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;headShake&quot;,&quot;_animation_delay&quot;:600}" data-widget_type="button.default">
-				
-        </div>
     </section>
 
 <!--Gallery Section-->
 <section id="gallery" class="py-5">
-    <div class="container">
-        <h2 class="text-center mb-4">Galeria de Fotos</h2>
+    <h2 class="text-center mb-4">Galeria de Fotos</h2>
+        <div class="galerias">
+            <input type="radio" name="slide" id="uno" checked>
+            <input type="radio" name="slide" id="dos">
+            <input type="radio" name="slide" id="tres">
+            <input type="radio" name="slide" id="cuatro">
 
+           <!-- <div class="gall img1">
+                <img src="/asset/img/galeria/foto9.jpg" alt="">
+            </div>
+            <div class="gall img2">
+                <img src="/asset/img/galeria/foto2.jpg" alt="">
+            </div>
+            <div class="gall img3">
+                <img src="/asset/img/galeria/foto3.jpg" alt="">
+            </div>
+            <div class="gall img4">
+                <img src="/asset/img/galeria/foto4.jpg" alt="">
+            </div>
+
+            <div class="sliders"></div>
+                <label for="uno" class="uno"></label>
+                <label for="dos" class="dos"></label>
+                <label for="tres" class="tres"></label>
+                <label for="cuatro" class="cuatro"></label>
+ -->
     </div>
+
 <!-- Contact Section -->
 <section id="contact" class="py-5">
     <div class="container">
@@ -151,7 +179,7 @@
                 </form>
             </div>
         </div>
-        <!-- WhatsApp Contact -->
+        <!-- WhatsApp Contact -- aca-->
         <div class="text-center mt-4">
             <h2 class="text-center mb-4">O contáctame directamente en WhatsApp:</h2>
             <a href="https://api.whatsapp.com/send?phone=56966140705" target="_blank" title="Contacta conmigo en WhatsApp">
@@ -161,15 +189,12 @@
     </div>
 </section>
 
-<!-- Footer -->
+<!-- Footer  -->
 <footer class="bg-dark text-white text-center py-4">
-    <div class = "redes">
-        <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
-    </div>
     <p>&copy; 2024 Juan Pérez. Todos los derechos reservados.</p>
 </footer>
-
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
 </body>
 </html>
